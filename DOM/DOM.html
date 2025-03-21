@@ -8,21 +8,29 @@
     <body>
 
 
+
+        
         <img id="myImage" src="images/cat.jpg">
 
         <button onclick="image()">Change Me</button>
 		
 		<p id="test">Hello World!</p>
 
-        <button onclick="change()">Change colour</button>
+        <button onclick="change()">Change text</button>
+
+        <button onclick="colour()">Change colour</button>
 
         <script>
+
+            function change() {
+                document.getElementById("test").innerHTML = "New text!"; 
+            }
 
             function image() {
                 document.getElementById("myImage").src = "images/dog.jpg"; 
             }
 
-            function change() {
+            function colour() {
                 document.getElementById("test").style.color = "red";
             }
 
