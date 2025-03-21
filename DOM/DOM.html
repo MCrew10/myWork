@@ -7,15 +7,24 @@
 
     <body>
 
+        <p id="test">Hello World!</p>
+
         <img id="myImage" src="images/cat.jpg">
 
         <button onclick="change()">Change Me</button>
 
+        <button onclick="colour()">Change colour</button>
+
         <script>
 
             function change() {
-                document.getElementById("myImage").innerHTML = "images/dog.jpg"; 
+                document.getElementById("myImage").src = "images/dog.jpg"; 
             }
+
+            function colour() {
+                document.getElementById("test").style.colour = "red";
+            }
+
         </script>
  
         
